@@ -11,10 +11,13 @@ This reveals specific points in a given topographical area that will accumulate 
 
 Although other D8 and flow accumulation plugins or instruments already exist such as the linked one from ArcGIS, the advantage of this project is that the code is completely open-source and easily adjustable.  It improves clarity as to how a D8 function is applied on an elevation raster and the methods used to predict areas of high flow accumulation.
 
-Replication
+Replication of Houston AOIs
 
-1. Download the given notebook
-2. Scroll down to the "main" function
-3. Replace the given file with your own .csv, .tif, or .dem file.
-4. Run all
+1. Download the given notebook "SEES_Flood_Traker.ipynb" in Colab
+2. Download the TIFs in the "DEM Data" folder and save them to Google Drive
+3. Scroll down to the "main" function in Colab
+4. Replace the line tif_file = '...' with tif_file = '(directory of one of the Houston TIFs)'
+5. Run all
+
+For other elevation datasets, save them to Google Drive and replace the tif_file line with tif_file = '(your other elevation file directory)'
 
