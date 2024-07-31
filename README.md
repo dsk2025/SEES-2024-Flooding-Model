@@ -1,3 +1,5 @@
+2024 SEES Flood Model
+
 This project is designed to provide a way to predict areas at high risk of flooding under an OpenScience framework.
 
 The program uses elevation data from .csv, .tif, and .dem files. It interprets this data as a raster then applies a D8 flow analysis on the entire raster.
@@ -9,4 +11,10 @@ This reveals specific points in a given topographical area that will accumulate 
 
 Although other D8 and flow accumulation plugins or instruments already exist such as the linked one from ArcGIS, the advantage of this project is that the code is completely open-source and easily adjustable.  It improves clarity as to how a D8 function is applied on an elevation raster and the methods used to predict areas of high flow accumulation.
 
-Furthermore, this source can take any elevation data from around the world. Anyone concerned with flooding in their community can run this program over the area of interest (AOI) and be informed as to where it will flood.
+Replication
+
+1. Download the given notebook
+2. Scroll down to the "main" function
+3. Replace the given file with your own .csv, .tif, or .dem file.
+4. Run all
+
