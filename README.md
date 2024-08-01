@@ -13,11 +13,18 @@ Although other D8 and flow accumulation plugins or instruments already exist suc
 
 Replication of Houston AOIs
 
-1. Download the given notebook "SEES_Flood_Traker.ipynb" in Colab
-2. Download the TIFs in the "DEM Data" folder and save them to Google Drive
-3. Scroll down to the "main" function in Colab
-4. Replace the line tif_file = '...' with tif_file = '(directory of one of the Houston TIFs)'
+1. Download the given notebook "SEES_Flood_Traker.ipynb" in Colab or other medium
+2. Copy the GitHub link of the TIF file in the DEM Data folder
+3. Scroll down to the "main" function in the notebook
+4. Replace the old link "tif_url" with the new link (from 2.)
 5. Run all
 
-For other elevation datasets, save them to Google Drive and replace the tif_file line with tif_file = '(your other elevation file directory)'
+Alternatively, you can upload your own .dem, .csv, or .tif file to a unique Colab session:
+
+1) Click on files on the left sidebar
+2) Press "Upload to session storage"
+3) Upload your file
+4) Comment out the "tif_url" to the "urlretrieve" lines.
+5) Replace "tif_name" in main(tif_name) with your file's directory
+
 
