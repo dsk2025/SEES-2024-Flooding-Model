@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directions</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+        }
+        .nav {
+            width: 100%;
+            background-color: red;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            box-shadow: 0 4px 2px -2px gray;
+        }
+        .nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .nav a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="/">Home</a>
+        <a href="/directions">Directions</a>
+    </div>
+    <div class="content">
+        <h1>Directions</h1>
+        <p>Select one center point of ann AOI on the map and confirm your choice by clicking Confirm AOI.</p> <p>You will be directed to a new tab with the DEM of the selected AOI.</p> <p> Click home to restart.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEM</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            margin-top: 20px;
+        }
+        .dem-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .dem-image {
+            height: 300px;
+            width: auto;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .nav {
+            width: 100%;
+            background-color: red;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            box-shadow: 0 4px 2px -2px gray;
+        }
+        .nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="/">Home</a>
+        <a href="/directions">Directions</a>
+    </div>
+    <div class="header">
+        <h1>Digital Elevation Model</h1>
+    </div>
+    <div class="dem-container">
+        {% for dem_path in dem_paths %}
+            <img src="{{ dem_path }}" alt="DEM" class="dem-image">
+        {% endfor %}
+    </div>
+</body>
+</html>
